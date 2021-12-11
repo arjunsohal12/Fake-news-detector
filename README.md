@@ -7,3 +7,5 @@ Due to the nature of fake news, it can be tricky to create a high accuracy model
 
 
 For the network itself, a Long-Short Term Memory network was used, and the weights were initialized as the aforementioned word2vec vectors. The reason I chose an LSTM algorithm was that LSTM algorithms can identify patterns more effectively than other NLP algorithms, and in addition, LSTM algorithms take inputs of multiple word strings to classify data, unlike other algorithms. 
+
+The data used to train the model can be found here: https://www.kaggle.com/c/fake-news/data
