@@ -83,4 +83,4 @@ score = accuracy_score(y_test, pred)
 
 
 cm = metrics.confusion_matrix(y_test, pred)
-poo = conmat.plot_confusion_matrix(cm, classes=["FAKE", "REAL"])
+matrix = conmat.plot_confusion_matrix(cm, classes=["FAKE", "REAL"])
