@@ -19,7 +19,7 @@ ps = PorterStemmer()
 
 
 model = KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True, limit=10000)
-df = pd.read_csv('train.csv')
+df = pd.read_csv('train.csv') # this file can be found at https://www.kaggle.com/c/fake-news/data
 df = df.dropna()
 messages = df.copy()
 messages.reset_index(inplace=True)
