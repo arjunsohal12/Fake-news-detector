@@ -18,7 +18,7 @@ from sklearn import metrics
 ps = PorterStemmer()
 
 
-model = KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True, limit=10000)
+model = KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True, limit=10000) # this file can be found at https://code.google.com/archive/p/word2vec/.
 df = pd.read_csv('train.csv') # this file can be found at https://www.kaggle.com/c/fake-news/data
 df = df.dropna()
 messages = df.copy()
